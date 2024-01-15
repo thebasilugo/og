@@ -1,7 +1,97 @@
 <!DOCTYPE html>
-  <html>
-  <head></head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- bootstrap scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Roseline Ogundokun</title>
+  </head>
   <body>
-  <p>no information yet. </p>
-</body>
-  </html>
+    <div class="container-fluid full-content">
+      <section id="title">
+        <!-- nav bar -->
+        <!-- nav bar with [md & sm screen sizes] responsiveness -->
+        <nav class="navbar navbar-expand-lg navigation-bar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"> </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Mentorship</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- title -->
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <!-- main title image -->
+            <img
+              class="title-image"
+              src="images/roseline.jpg"
+              alt="title-image"
+            />
+          </div>
+          <div class="col-lg-8 col-md-8 title-text">
+            <h1>Dr. Roseline Ogundokun</h1>
+            <h2>Data Scientist</h2>
+            <button class="btn btn-outline-dark btn-lg" type="button">
+              work with me
+            </button>
+            <button class="btn btn-dark btn-lg" type="button">
+              something else
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- footer -->
+      <footer id="footer">
+        <p>&copy;copyright 2024 thebasilugo</p>
+      </footer>
+  </body>
+</html>
