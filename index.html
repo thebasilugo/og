@@ -16,9 +16,7 @@
       src="https://kit.fontawesome.com/c2978570b8.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../thebasilugo/styles/light-mode.css" />
-    <link rel="stylesheet" href="../thebasilugo/styles/main.css" />
-    <link rel="stylesheet" href="../thebasilugo/styles/sm-responsive.css" />
+
     <script
       src="https://kit.fontawesome.com/c2978570b8.js"
       crossorigin="anonymous"
@@ -35,6 +33,7 @@
         margin: 0;
         padding: 0;
         background-color: var(--light-bg);
+        transition: all 0.15s ease-in-out;
       }
 
       header {
@@ -62,6 +61,13 @@
 
       .hidden-header-text {
         display: inline;
+        transition: all 0.15s ease-in-out;
+      }
+
+      #hidden-header-btn {
+        display: none;
+        color: var(--light-bg);
+        transition: all 0.15s ease-in-out;
       }
 
       body:hover .hidden-header-text {
@@ -70,7 +76,7 @@
 
       section {
         padding: 20px;
-        margin-top: 80px; /* Added margin-top to create space for fixed header */
+        margin-top: 80px; 
       }
 
       .btn-dark:hover {
@@ -80,6 +86,7 @@
 
       h1 {
         color: var(--dark-accent);
+        transition: all 0.15s ease-in-out;
       }
 
       .about {
@@ -136,98 +143,134 @@
         color: rgb(208, 241, 239);
       }
 
-      @media (max-width: 424px) {
-        /* Add your responsive styles here */
-      }
-
-      /* Additional styles from the second website */
-      .full-content {
-        /* Add your styles for full-content here */
-      }
-
-      .navigation-bar {
-        /* Add your styles for navigation bar here */
-      }
-
-      .title-image {
-        /* Add your styles for title image here */
-      }
-
-      .title-text {
-        /* Add your styles for title text here */
-      }
-
-      .btn-lg {
-        /* Add your styles for large buttons here */
-      }
-
-      .divider {
-        /* Add your styles for divider sections here */
-      }
-
-      .mentee-image {
-        /* Add your styles for mentee images here */
-      }
-
-      #features,
-      #testimonials,
-      #press,
-      #cta,
-      #footer {
-        /* Add your styles for other sections here */
-      }
-
-      .row,
-      .col-lg-3,
-      .col-md-4,
-      .col-sm-6 {
-        /* Add your styles for rows and columns here */
-      }
-
       @media (max-width: 820px) {
         .about {
-          flex-direction: column; /* Change flex-direction to column for mobile screens */
-          text-align: justify; /* Justify text in the about section */
-          align-items: center; /* Center align items */
+          flex-direction: column;
+          text-align: justify;
+          align-items: center;
         }
 
         .about img {
-          margin: 0 auto; /* Center the image horizontally */
-          max-width: 50%; /* Make sure the image doesn't overflow its container */
+          margin: 0 auto;
+          max-width: 50%;
         }
 
         .about-text {
-          margin-top: 20px; /* Add some top margin for separation between image and text */
-        }
-      }
-      @media (max-width: 820px) {
-        .about {
-          flex-direction: column; /* Change flex-direction to column for mobile screens */
-          text-align: justify; /* Justify text in the about section */
-          align-items: center; /* Center align items */
+          margin-top: 20px;
         }
 
-        .about img {
-          margin: 0 auto; /* Center the image horizontally */
-          max-width: 50%; /* Make sure the image doesn't overflow its container */
+        body {
+          font-family: Helvetica, "Times New Roman", Times, serif;
+          margin: 0;
+          padding: 0;
+          background-color: var(--light-bg);
+          transition: all 0.15s ease-in-out;
         }
 
-        .about-text {
-          margin-top: 20px; /* Add some top margin for separation between image and text */
+        header {
+          background: #f8f9fa;
+          color: #000;
+          position: fixed;
+          width: 100%;
+          text-align: center;
+          padding: 10px 0;
+          height: 18%;
+          transition: all 0.25s ease-in-out;
+        }
+
+        h1 {
+          color: #fff;
+        }
+
+        .hidden-header-text {
+          display: inline;
+          transition: all 0.15s ease-in-out;
+        }
+
+        #hidden-header-btn {
+          display: inline-block;
+          color: var(--light-bg);
+          transition: all 0.15s ease-in-out;
+        }
+
+        .hidden-header-text {
+          display: none;
+        }
+
+        section {
+          padding: 20px;
+          margin-top: 80px;
+        }
+
+        .btn-dark:hover {
+          background: transparent;
+          color: rgb(17, 17, 17);
+        }
+
+        h1 {
+          color: var(--dark-accent);
+          transition: all 0.15s ease-in-out;
+        }
+
+        ul {
+          text-decoration: none;
+          padding: 0;
+        }
+
+        li {
+          padding: 10px 0;
+        }
+
+        .education,
+        .research,
+        .publications {
+          margin-bottom: 40px;
+        }
+
+        footer {
+          background-color: var(--dark-accent);
+          color: #ffffff;
+          text-align: center;
+          padding: 10px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+
+        .container-fluid {
+          padding: 7% 15%;
+        }
+
+        footer a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        footer a:hover {
+          color: rgb(200, 200, 200);
+        }
+
+        footer p span {
+          color: rgb(208, 241, 239);
         }
       }
     </style>
   </head>
 
   <body>
-    <header>
+    <header class="">
       <h1>Dr. Roseline Oluwaseun Ogundokun</h1>
       <p>Data Scientist and Lecturer</p>
       <p class="hidden-header-text">
-        <em> Connect with me. I can't wait to hear to you.</em>
+        <em> Connect with me. I can't wait to hear from you.</em>
+        <br />
+        <br />
+
+          Let's begin
+        </button>
       </p>
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid main-page-content">
       <section class="about">
         <img src="images/roseline.jpg" alt="profile-image" />
         <div class="about-text">
@@ -284,8 +327,6 @@
       </section>
     </div>
 
-    <!-- Add sections from the second website as needed -->
-
     <footer>
       <p>
         Text me either on <br />
@@ -301,5 +342,6 @@
         <a href="instagram.com">instagram</a> -->
       </div>
     </footer>
+
   </body>
 </html>
