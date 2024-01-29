@@ -1,197 +1,236 @@
 :root {
-  --text-dark: #212529;
-  --text-light: #f8f9fa;
-  --bg-light: #d0d0d0;
-  --bg-dark: #060513;
-  --text-font: "Outfit";  
-  --section-divider: #a1a1a1;
+        --dark-accent: #2e2e2e;
+        --light-bg: #f8f9fa;
+      }
+
+html {
+scroll-behavior: smooth;
 }
 
-/* general styles */
-  html {
-    scroll-behavior: smooth;
-  }
+      body {
+        font-family: Helvetica, "Times New Roman", Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--light-bg);
+        transition: all 0.15s ease-in-out;
+      }
 
-  body {
-    background-color: var(--bg-light);
-    color: var(--text-dark);
-    font-family: var(--text-font); 
-  }
+      header {
+        background: var(--light-bg);
+        color: #000;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        padding: 20% 0;
+        height: 100%;
+        transition: all 0.25s ease-in-out;
+      }
 
-  .full-content {
-    padding: 3% 15% 0;
-  }
+      body:hover header {
+        background: var(--dark-accent);
+        color: #fff;
+        padding: 10px 0;
+        height: 18%;
+        margin: 0;
+      }
 
-  h1 {
-    font-weight: 900;
-    font-size: 2.5rem;
-    line-height: 1.5;
-  }
+      body:hover h1 {
+        color: #fff;
+      }
 
-  h2 {
-    font-weight: 700;
-    font-size: 1.7rem;
-    color: #313131;
-    /* line-height: 1.5; */
-  }
+      .hidden-header-text {
+        display: inline;
+        transition: all 0.15s ease-in-out;
+      }
 
-  h3 {
-    font-weight: 700;
-  }
-  
-  p {
-    font-weight: 200;
-  }
+      #hidden-header-btn {
+        display: none;
+        color: var(--light-bg);
+        transition: all 0.15s ease-in-out;
+      }
 
-  section > h3 {
-    padding: 24px 0 32px;
-  }
+      body:hover .hidden-header-text {
+        display: none;
+      }
 
-  .divider {
-    margin-bottom: 4%;
-    padding: 0 0 4%;
-    border-bottom: 1px solid var(--section-divider);
-    }
-/* end of general styles */
+      section {
+        padding: 20px;
+        margin-top: 80px; 
+      }
 
-  .title-text {
-    /* background-color: red; */
-    font-size: 1.2rem;
-  }
+      .btn-dark:hover {
+        background: transparent;
+        color: rgb(17, 17, 17);
+      }
 
-  .title-image {
-    width: 100%;
-    border-radius: 100%;
-    border: 2px solid var(--text-dark);
-    /* transform: rotate(-10deg); */
-    transform: rotate(0deg);
-    transition: all 0.26s ease-in-out;
-  }
+      h1 {
+        color: var(--dark-accent);
+        transition: all 0.15s ease-in-out;
+      }
 
-    .navigation-bar {
-      padding: 0 0 4rem;
-      /* visibility: hidden; */
-    }
+      .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .about img {
+        border-radius: 100%;
+        max-width: 180px;
+        margin: 0 50px 0 0;
+      }
+
+      ul {
+        text-decoration: none;
+        padding: 0;
+      }
+
+      li {
+        padding: 10px 0;
+      }
+
+      .education,
+      .research,
+      .publications {
+        margin-bottom: 40px;
+      }
+
+      footer {
+        background-color: var(--dark-accent);
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .container-fluid {
+        padding: 7% 15%;
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: rgb(200, 200, 200);
+      }
+
+      footer p span {
+        color: rgb(208, 241, 239);
+      }
+
     
-    .navigation-bar button span{
-      color: var(--bg-light);
-    }
-    
-    .nav-link {
-      font-size: 1.2rem;
-      opacity: 0.7;
-    }
-  /* end of navbar */
+      @media (max-width: 820px) {
+        body {
+          font-family: Helvetica, "Times New Roman", Times, serif;
+          margin: 0;
+          padding: 0;
+          background-color: var(--light-bg);
+          transition: all 0.15s ease-in-out;
+        }
 
-  
-  /* title buttons */
-    .title-button {
-      margin: 2% 2% 5% 0;
-      width: 12em;
-      transition: all ease-in-out;
-      font-size: 1.1rem;
-    }
+        .container-fluid {
+          padding: 7% 4%;
+        }
 
-    .btn-dark {
-      transition: all 0.26s ease-in-out;
-    }
+        header {
+          background: var(--dark-accent);
+          color: #fff;
+          position: fixed;
+          width: 100%;
+          text-align: center;
+          padding: 10px 0;
+          height: 19%;
+          transition: all 0.25s ease-in-out;
+        }
 
-    .btn-dark:hover {
-      background: transparent;
-      color: var(--text-dark);
-    }
-  /* end of title buttons */
-/* end of title */
+        body:hover header {
+          height: 19%;
+        }
 
-/* about */
-  .about-text {
-    font-size: 1.4rem;
-    text-align: justify;
-  }
+        .hidden-header-text {
+          display: inline;
+          transition: all 0.15s ease-in-out;
+        }
 
-/* mentees */
-  #mentees {
-    height: 20%;
-    text-align: center;
-  }
+        #hidden-header-btn {
+          display: inline-block;
+          color: var(--light-bg);
+          transition: all 0.15s ease-in-out;
+        }
 
-  #mentees h2 {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
+        .hidden-header-text {
+          display: none;
+        }
 
-  .mentee-image {
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
-  }
+        .about {
+          flex-direction: column;
+          text-align: justify;
+          align-items: center;
+        }
 
-  .carousel-item {
-    padding: 7% 15%;
-  }
-/* end of mentees */
+        .about img {
+          margin: 0 auto;
+          max-width: 50%;
+        }
 
+        .about-text {
+          margin-top: 20px;
+        }
 
+        section {
+          padding: 10px;
+          margin-top: 80px; 
+        }
 
-/* footer */
-  #footer {
-    padding: 8% 0;
-    text-align: center;
-    font-weight: 200;
-    color: var(--bg-dark);
-  }
+        .btn-dark:hover {
+          background: transparent;
+          color: rgb(17, 17, 17);
+        }
 
-  footer p {
-    color: var(--text-dark);
-    opacity: 0.7;
-  }
-  
-  footer p a {
-    color: var(--text-dark);
-    text-decoration: none;
-  }
-  
-  footer p a:hover {
-    text-decoration: underline;
-  }
-/* end of footer */
+        h1 {
+          color: #fff;
+          transition: all 0.15s ease-in-out;
+        }
 
+        ul {
+          text-decoration: none;
+          padding: 0;
+        }
 
+        li {
+          padding: 10px 0;
+        }
 
-/* phone responsiveness */
-/* for col-sm-12 */
-@media only screen and (max-width: 767px) {
-  /* title */
-  #title {
-    text-align: center;
-  }
+        .education,
+        .research,
+        .publications {
+          margin-bottom: 40px;
+        }
 
-  .title-image {
-    width: 12rem;
-  }
+        footer {
+          background-color: var(--dark-accent);
+          color: #ffffff;
+          text-align: center;
+          padding: 10px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
 
-  /* about me */
-  .about-text {
-    font-size: 1.1rem;
-  }
-}
+        footer a {
+          color: #fff;
+          text-decoration: none;
+        }
 
-/* before col-sm-12 */
-@media only screen and (max-width: 860px) {
+        footer a:hover {
+          color: rgb(200, 200, 200);
+        }
 
-  .title-text h1{
-    font-size: 2rem;
-  }
-
-  .title-text h2{
-    font-size: 1.3rem;
-  }
-
-  .title-text p{
-    font-size: 1rem;
-  }
-
-  .about-text {
-    font-size: 1.2rem;
-  }
-}
+        footer p span {
+          color: rgb(208, 241, 239);
+        }
+      }
