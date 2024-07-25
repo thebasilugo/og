@@ -20,6 +20,13 @@ const mentees = [
 		year: "2018/2019",
 		qualification: "Bachelors",
 	},
+	{
+		name: "Uba Kaneto Kingson",
+		project:
+			"Development of a Web Portal to Process Requests of Infrastructure Repair and Maintenance in Students’ Hostel",
+		year: "2018/2019",
+		qualification: "Bachelors",
+	},
 ];
 
 // Function to create carousel items
