@@ -14,6 +14,12 @@ const mentees = [
 		year: "2018/2019",
 		qualification: "Bachelors",
 	},
+	{
+		name: "Olaniyan Lonimi",
+		project: "Development of a Hand Gesture Recognition-Based CAPTCHA",
+		year: "2018/2019",
+		qualification: "Bachelors",
+	},
 ];
 
 // Function to create carousel items
