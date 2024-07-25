@@ -7,6 +7,13 @@ const mentees = [
 		year: "2021/2022",
 		qualification: "Masters",
 	},
+	{
+		name: "Anakhu Naomi Itseoghena",
+		project:
+			"Development of Machine Learning-Based Predictive Farm Land Optimization and Crop Monitoring System",
+		year: "2018/2019",
+		qualification: "Bachelors",
+	},
 ];
 
 // Function to create carousel items
