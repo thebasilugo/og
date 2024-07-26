@@ -27,6 +27,13 @@ const mentees = [
 		year: "2018/2019",
 		qualification: "Bachelors",
 	},
+	{
+		name: "Segun-Owolabi Tobe",
+		project:
+			"Design And Implementation of An Automated Web Application Security Testing System",
+		year: "2019/2020",
+		qualification: "Bachelors",
+	},
 ];
 
 // Function to create carousel items
