@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	font-family: Arial, Helvetica, sans-serif;
+:root {
+	--deep-blue: #1a237e;
+	--teal: #009688;
+}
+
+.bg-deep-blue {
+	background-color: var(--deep-blue);
+}
+
+.text-teal {
+	color: var(--teal);
 }
