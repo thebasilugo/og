@@ -198,7 +198,7 @@ const mentees: Mentee[] = [
 	{
 		name: "Basil-Kamanu Ugochukwu",
 		project:
-			"Development of a Cyber Attack Detection System using a Hybrid CNN-MLP model",
+			"Development of an optimized Cyber Attack Detection System using a Hybrid CNN-MLP model",
 		year: "2022/2023",
 		qualification: "Bachelors",
 	},
@@ -284,7 +284,7 @@ export default function MenteeCarousel() {
 
 	return (
 		<section className="py-16 bg-gray-100">
-			<div className="container min-h-max mx-auto px-4">
+			<div className="container mx-auto px-4">
 				<h2 className="text-3xl font-bold mb-8 text-center">Mentees</h2>
 				<p className="text-gray-700 mb-8 text-center max-w-3xl mx-auto">
 					The following individuals have been directly mentored by Dr. Roseline
